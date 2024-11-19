@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(210, 10%, 95%);
+    font-family: 'Arial', sans-serif;
+}
+
+#calculator {
+    background-color: hsl(210, 20%, 15%);
+    border-radius: 15px;
+    width: 320px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    background-color: hsl(210, 20%, 10%);
+    color: white;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(210, 20%, 25%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: hsl(210, 20%, 35%);
+}
+
+button:active {
+    background-color: hsl(210, 20%, 45%);
+}
+
+.operator-btn {
+    background-color: hsl(35, 90%, 50%);
+}
+
+.operator-btn:hover {
+    background-color: hsl(35, 90%, 60%);
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 90%, 70%);
+}
