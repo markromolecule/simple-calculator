@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator" role="application" aria-label="Simple Calculator">
+        <!-- Display -->
+        <input id="display" readonly aria-live="polite" tabindex="-1" aria-label="Calculator Display">
+        <!-- Buttons -->
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" class="operator-btn" aria-label="Add">+</button>
+            <button onclick="appendToDisplay('7')" aria-label="Seven">7</button>
+            <button onclick="appendToDisplay('8')" aria-label="Eight">8</button>
+            <button onclick="appendToDisplay('9')" aria-label="Nine">9</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn" aria-label="Subtract">-</button>
+            <button onclick="appendToDisplay('4')" aria-label="Four">4</button>
+            <button onclick="appendToDisplay('5')" aria-label="Five">5</button>
+            <button onclick="appendToDisplay('6')" aria-label="Six">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn" aria-label="Multiply">*</button>
+            <button onclick="appendToDisplay('1')" aria-label="One">1</button>
+            <button onclick="appendToDisplay('2')" aria-label="Two">2</button>
+            <button onclick="appendToDisplay('3')" aria-label="Three">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn" aria-label="Divide">/</button>
+            <button onclick="appendToDisplay('.')" aria-label="Decimal Point">.</button>
+            <button onclick="appendToDisplay('0')" aria-label="Zero">0</button>
+            <button onclick="calculate()" aria-label="Equals">=</button>
+            <button onclick="clearDisplay()" class="operator-btn" aria-label="Clear">C</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
